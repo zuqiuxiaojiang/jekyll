@@ -1,6 +1,5 @@
 ---
 title: Post with Header Image
-encrypt:true   # 注意没空格，原文🈚此行，测试加密功能.
 tags: TeXt
 article_header:
   type: cover
