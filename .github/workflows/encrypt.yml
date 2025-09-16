@@ -1,0 +1,16 @@
+name: e
+on:
+  push: { branches: main }
+jobs:
+  e:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/jekyll-build-pages@v1
+      - run: npm i -g staticrypt
+      - run: |
+          grep -rl 'encrypt:true' _site/ | xargs -I% staticrypt % ${{ secrets.P }} -o %
+      - uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: _site
