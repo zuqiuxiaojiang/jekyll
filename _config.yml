@@ -37,7 +37,7 @@ author:
   type      : # "person" (default), "organization"
   name      : Y K
   url       :
-  avatar    : # path or url of avatar image (square)
+  avatar    : https://s21.ax1x.com/2025/04/15/pEWH3WD.png # path or url of avatar image (square)
   bio       : I am an amazing person.
   email     :
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
